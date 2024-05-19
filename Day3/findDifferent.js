@@ -3,8 +3,12 @@ function findMissing(arr1, arr2) {
   b = arr2.sort((a, b) => a - b);
 
   for (i = 0; i <= b.length; i++) {
-    c = a[i] != b[i] ? a[i - 1] : null;
+    c = a[i] != b[i] ? a[i] : null;
   }
+
+  // const sum = (arr) => arr.reduce((a, b) => a + b, 0);
+
+  // const findMissing = (arr1, arr2) => sum(arr1) - sum(arr2);
   return +c;
 }
 
